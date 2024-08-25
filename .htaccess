@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Chuyển tất cả các yêu cầu không tìm thấy về index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
